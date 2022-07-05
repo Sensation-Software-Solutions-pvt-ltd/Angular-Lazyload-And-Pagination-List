@@ -1,0 +1,22 @@
+<div class="left-menu">					
+    <ul class="navbar-left panel-group" id="accordion">
+        <li class="nav-item panel">
+            <a href="javascript:void(0)" [ngClass]="{'active':_router.url==='/home'}" routerLink="/home" class="nav-link active" title="Dashboard">
+                <i class="fa fa-home"></i>
+                <span class="nav-name">Dashboard</span>
+            </a>
+        </li>
+        <li class="nav-item panel"  >
+            <a href="javascript:void(0)" [ngClass]="{'active':_router.url==='/pagination-data'}" routerLink="/pagination-data" class="nav-link " title="user">
+                <i class="fa fa-file-text-o"></i>
+                <span class="nav-name">Pagination</span>
+            </a>
+        </li>
+        <li class="nav-item panel" >
+            <a href="javascript:void(0)" [ngClass]="{'active':_router.url==='/lazyload-data'}"  routerLink="/lazyload-data" class="nav-link " title="user">
+                <i class="fa fa-spinner"></i>
+                <span class="nav-name">Lazy Load Data</span>
+            </a>
+        </li>
+    </ul>
+</div>

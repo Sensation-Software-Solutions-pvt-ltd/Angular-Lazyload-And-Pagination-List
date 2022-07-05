@@ -1,0 +1,14 @@
+<div class="search-results"
+     infinite-scroll
+     [scrollWindow]="false"
+     [infiniteScrollDistance]="scrollDistance"
+     [infiniteScrollThrottle]="throttle"
+     (scrolled)="onScrollDown($event)">
+  <ul>
+    <ng-container *ngFor="let item of paginationData;let i = index;">
+      <li> <p><span>{{i}}) </span>{{item.ACCESSIONNUMBER}}, {{item.BROKER}}, {{item.BillingMethod}}, {{item.DOB}}, {{item.FullAddress}}</p><span class="text-dark">{{item.STATUS}}</span></li>
+    </ng-container>
+  </ul>
+</div>
+
+
